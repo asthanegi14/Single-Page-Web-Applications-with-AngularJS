@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="myFirstApp">
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Coursera Project</title>
+  </head>
+  <body>
+  <h1>Hello Project</h1>
+    <div ng-controller="MyFirstControler">
+      {{name}}
+      {{sayHello()}}
+      <input type="text" ng-model="name">
+      Inside input is {{name}}
+    </div>
+  </body>
+</html>
