@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- browser-sync start "double-"server -->
+<html lang="en"
+      dir="ltr"
+      ng-app="myFirstAssignApp">
+
+<head>
+  <meta charset="utf-8">
+  <script src="angular.min.js"></script>
+  <script src="app.js"></script>
+  <title>Lunch Check</title>
+  <link rel="stylesheet"
+        href="style.css">
+</head>
+
+<body>
+  <div class="mainbody">
+    <h1>Please enter your diet below</h1>
+    <div class="Subdiv"
+         ng-controller="LunchCheckController">
+      <input type="text"
+             ng-model="inp"
+             ng-model="dietInput"
+             placeholder="Enter Here (comma-separated)">
+      <br>
+      <button type="button"
+              name="button"
+              ng-click="display()">Check If Too Much</button>
+      <p ng-class="{redSt: answer=='Please enter data first', greenSt: answer!='Please enter data first'}">
+        {{answer}}
+      </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

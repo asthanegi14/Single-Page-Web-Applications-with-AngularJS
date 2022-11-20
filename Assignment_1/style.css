@@ -1,0 +1,32 @@
+* {
+  margin: 1%;
+  padding: 1%;
+}
+
+.mainbody h1 {
+  align-items: center;
+  text-align: center;
+}
+
+.mainbody input {
+  align-items: center;
+  text-align: center;
+  width: fit-content;
+}
+
+.Subdiv {
+  align-items: center;
+  text-align: center;
+}
+
+.redSt {
+  color: red;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.greenSt {
+  color: green;
+  font-weight: 600;
+  font-size: 20px;
+}
